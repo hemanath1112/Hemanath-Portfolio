@@ -13,8 +13,7 @@ html{
 }
  body{
     font-family: 'Poppins', sans-serif;
-    /* font-family: 'Ubuntu', sans-serif; */
- }
+}
 
 .max-width{
     max-width: 130rem;
@@ -22,12 +21,17 @@ html{
     margin: auto;
 }
 
+
 /* navbar style */
 .navbar{
     position: fixed;
     width: 100%;
-    /* background-color: rgb(175, 17, 83); */
     padding: 3rem 0;
+    transition: all 0.2s ease;
+}
+.navbar.sticky{
+      background-color: rgb(175, 17, 83);
+      padding: 1.5rem 0;
 }
 .navbar .max-width{
     display: flex;
@@ -42,6 +46,10 @@ html{
 }
 .navbar .logo a span{
     color:rgb(175, 17, 83);
+    transition: all 0.2s ease;
+}
+.navbar.sticky .logo a span{
+    color:#fff;
 }
 .navbar ul li{
     display: inline-flex;
@@ -52,10 +60,24 @@ html{
     color: #fff;
     font-size: 1.8rem;
    margin-left: 2.5rem;
-   transition: 0.2s ease;
+
+   transition: all 0.2s ease;
 }
 .navbar ul li a:hover{
     color: rgb(175, 17, 83);
+    transition: all 0.2s ease;
+}
+.navbar.sticky ul li a:hover{
+    color: rgb(255, 255, 255);
+}
+.navbar .show-menu{
+    display: none;
+}
+.navbar .show-menu a i{
+    color: #fff;
+    font-size: 2.3rem;
+    cursor:pointer;
+   
 }
 
 /* home */
@@ -77,10 +99,11 @@ html{
     font-size: 2.7rem;
 }
 .home .home-content .text-2{
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 600;
     margin-left: -0.3rem;
     margin: 1.5rem 0;
+   
 }
 .home .home-content .text-3{
     font-size: 3.5rem;
@@ -105,5 +128,56 @@ html{
     border: .2rem solid rgb(175, 17, 83);
     color: rgb(175, 17, 83);
    
-
+}
+/* responsive media qurey */
+@media (max-width:1140px){
+    .home .max-width{
+        margin-left: 0;
+    }
+}
+@media (max-width:947px){
+    /* .navbar{
+        width: 100%;
+    } */
+    .max-width{
+        padding: 0rem 5rem; 
+    }
+    .navbar .show-menu{
+        display: initial;
+        z-index: 999;
+    }
+    .navbar .show-menu a i.active::before{
+        content: "\f00d";
+    }
+    .navbar .nav-item{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background-color: #111;
+        text-align: center;
+        padding-top: 8rem;
+        transition: all 0.3s ease;
+    }
+    .navbar .nav-item.active{
+        left: 0%;
+    }
+    .navbar .nav-item ul li {
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar .nav-item ul li a{
+        display: inline-block;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+    }
+    .home .home-content .text-2{
+        font-size: 5rem;
+       
+    }
+    .home .home-content .text-3{
+        font-size: 3rem;
+    }
+    
 }
