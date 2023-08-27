@@ -207,6 +207,7 @@ body {
   border: 2px solid rgb(175, 17, 83);
   border-radius: 0.6rem;
   transition:all 0.3s ease;
+  margin-right: 2rem;
  
 }
 .about .about-content .column-right a:hover{
@@ -403,12 +404,21 @@ body {
 .contact .contact-left{
   width: 45%;
 }
+.contact .contact-left img{
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 0.7rem;
+}
 .contact .contact-right{
   width: 55%;
 }
 .contact .contact-right h2{
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: rgb(241, 3, 102);
 }
 .contact .contact-right p{
   font-size: 1.4rem;
@@ -434,6 +444,7 @@ body {
   margin-bottom: 0;
   font-weight: 500;
   font-size: 1.8rem;
+  color: #000000;
 }
 .contact .social-link a{
   display: inline-block;
@@ -453,6 +464,53 @@ body {
   color: #28313b;
   background-color: transparent;
 }
+.footer{
+  background-color: #4d4855;
+  background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+}
+.footer .footer-content{
+  display: flex;
+}
+.footer .box-1{
+  width: 25rem;
+}
+.footer .box-1 h2{
+  margin: 2rem 0 1rem;
+  color: rgb(241, 3, 102);
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.footer .box-1 .add{
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #F3FDE8;
+  margin-bottom: 0.5rem;
+}
+.footer .box-1 span{
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  color: #FFBFBF !important;
+}
+.footer .box-1 p{
+  font-size: 1.3rem;
+  margin-bottom:0.5rem ;
+  font-weight:400;
+  color: #fafafa;
+}
+.footer hr{
+  margin-top: 1rem;
+}
+.footer .copy-rigths{
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+  font-weight: 400;
+}
+.footer .copy-rigths span{
+  color: rgb(241, 3, 102);
+}
+
 
 
 
@@ -484,11 +542,36 @@ body {
   }
   .contact .contact-right{
     width: 55%;
+  
   }
   .contact .social-link a i{
     font-size: 2.8rem;
   }
+  .contact .contact-left img{
+    width: 35rem;
+    height: 35rem;
+    text-align: center
+  }
+  .contact .details a{
+    font-size: 3rem;
+    color: rgb(241, 3, 102);
+  }
+  .contact .details p{
+      font-size: 1.4rem;
+  }
+  .contact .details p a{
+    font-size: 1.6rem;
+    color: #000000;
+  }
+  .contact .details h2{
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #000000;
+  }
 }
+
+
 @media (max-width: 947px) {
   .navbar .logo a {
     font-size: 3rem;
@@ -571,7 +654,7 @@ body {
     width: 20rem;
   }
   .contact{
-    height: 100%;
+    height: 100% !important;
   }
   .contact .contact-content{
     flex-direction: column;
@@ -581,6 +664,7 @@ body {
   }
   .contact .contact-right{
     width: 100%;
+    margin-top: 2rem;
   }
 }
 
@@ -606,7 +690,7 @@ body {
   }
   .contact {
     height: 100vh;
-    padding: 8rem 0;
+    padding: 8rem 0 4rem 0;
   }
   .contact .contact-right p {
     font-size: 1.4rem;
@@ -649,5 +733,17 @@ body {
     
     margin: 0rem auto 3rem;
   }
+  .contact .contact-left{
+    text-align: center;
+  }
+  .contact .contact-left img {
+    width: 30rem;
+    height: 30rem;
+    
+}
+.contact .social-link a i {
+  font-size: 2.5rem;
+  padding: 0.6rem;
+}
 
 }
