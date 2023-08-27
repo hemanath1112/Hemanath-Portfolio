@@ -251,7 +251,7 @@ body {
   border-radius: 0.6rem;
   left: 50%;
   font-size: 2rem;
-  color: rgb(255, 255, 255);
+  color:  rgb(241, 3, 102);
   padding: 0.5rem;
   background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
   transform: translateX(-50%);
@@ -261,18 +261,16 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.skills .card {
+.skills .skils-content .card {
   width: 25rem;
-  height: 25rem;
   padding: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 0.5rem 1rem 0rem 4rem;
   background-color: #ffffff;
-background-image: linear-gradient(315deg, #ffffff 0%, #91a6ff 74%);
-transition: all 0.5s ease-in-out;
-
+  background-image: linear-gradient(315deg, #ffffff 0%, #91a6ff 74%);
+  transition: all 0.5s ease-in-out;
 }
 .skills .card:hover{
   transform: scale(1.1);
@@ -280,20 +278,181 @@ transition: all 0.5s ease-in-out;
   background-image: linear-gradient(315deg, #378b29 0%, #ffffff 74%);
 
 }
-
 .skills .card img{
   width: 10rem;
   height: 10rem;
 }
+.skills .card h2{
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+.skills .card .star i{
+  display: inline-block;
+  font-size: 1.8rem;
+  color: rgb(12, 12, 12);
+}
 
 
+/* tools */
+.tools{
+  width: 100%;
+  background: linear-gradient(rgba(40, 49, 59, 0.8), rgba(40, 49, 59, 0.9)), url(../asses/images/tool-3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
+  color: #fff;
+}
+.tools .title {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 6rem;
+  padding-bottom: 2rem;
+  color: #fff;
+}
+.tools .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 18rem;
+  height: 0.3rem;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+}
+.tools .title::after {
+  content: " I Am Using";
+  position: absolute;
+  bottom: -1.3rem;
+  /* border-radius: 0.5rem; */
+  left: 50%;
+  font-size: 2rem;
+  color:  rgb(241, 3, 102);
+  padding: 0.5rem 1rem;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  transform: translateX(-50%);
+}
+.tools .tools-content{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.tools .tool-name{
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  transition: all 0.3 ease;
+}
+.tools .tool-name:hover{
+  transform: translateY(-2rem);
+}
+.tools .tool-name img{
+   width: 10rem;
+  height: 10rem;
+  margin-bottom: 2rem;
+}
+.tools .tool-name h2{
+ font-size: 2rem;
+ font-weight: 500;
+}
 
 
-
-
-
-
-
+/* contact section */
+.contact{
+  height: 100vh;
+  padding: 10rem 0;
+}
+.contact .title {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 6rem;
+  padding-bottom: 2rem;
+  color: #000000;
+}
+.contact .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20rem;
+  height: 0.3rem;
+  background-color: #000000;
+  transform: translateX(-50%);
+}
+.contact .title::after {
+  content: " Get in Touch";
+  position: absolute;
+  bottom: -1.1rem;
+  left: 50%;
+  font-size: 2rem;
+  color:  rgb(241, 3, 102);
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+.contact .contact-content{
+  display: flex
+}
+.contact .contact-left{
+  width: 45%;
+}
+.contact .contact-right{
+  width: 55%;
+}
+.contact .contact-right h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contact .contact-right p{
+  font-size: 1.4rem;
+}
+.contact .details{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+.contact .details a{
+  font-size: 3.5rem;
+  color: rgb(241, 3, 102);
+}
+.contact .details p{
+    font-size: 1.6rem;
+}
+.contact .details p a{
+  font-size: 1.6rem;
+  color: #000000;
+}
+.contact .details h2{
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+.contact .social-link a{
+  display: inline-block;
+  padding-right: 1rem;
+  margin-top: 1rem;
+}
+.contact .social-link a i{
+  font-size: 3rem;
+  padding: 0.8rem;
+  background-color: #28313b;
+  border: 0.2rem solid #28313b;
+  border-radius: 50%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+.contact .social-link a i:hover{
+  color: #28313b;
+  background-color: transparent;
+}
 
 
 
@@ -301,6 +460,9 @@ transition: all 0.5s ease-in-out;
 @media (max-width: 1300px) {
   .home .max-width {
     margin-left: 0;
+  }
+  .tools .tool-name{
+    width: 15rem;
   }
 }
 @media (max-width: 1140px) {
@@ -319,6 +481,12 @@ transition: all 0.5s ease-in-out;
     text-align: justify;
     margin-bottom: 2rem;
     line-height: 2.6rem;
+  }
+  .contact .contact-right{
+    width: 55%;
+  }
+  .contact .social-link a i{
+    font-size: 2.8rem;
   }
 }
 @media (max-width: 947px) {
@@ -392,7 +560,28 @@ transition: all 0.5s ease-in-out;
     margin-bottom: 3rem;
     line-height: 2.8rem;
   }
-  
+
+  .skills .skils-content{
+    justify-content: center;
+  }
+  .skills .skils-content .card {
+    margin: 0rem auto 3rem;
+  }
+  .tools .tool-name{
+    width: 20rem;
+  }
+  .contact{
+    height: 100%;
+  }
+  .contact .contact-content{
+    flex-direction: column;
+  }
+  .contact .contact-left{
+    width: 100%;
+  }
+  .contact .contact-right{
+    width: 100%;
+  }
 }
 
 @media (max-width: 690px) {
@@ -408,6 +597,24 @@ transition: all 0.5s ease-in-out;
   }
   .home a {
     font-size: 2rem;
+  }
+  .skills {
+    padding: 8rem 0;
+  }
+  .tools .tool-name{
+    width: 17rem;
+  }
+  .contact {
+    height: 100vh;
+    padding: 8rem 0;
+  }
+  .contact .contact-right p {
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+  .contact .details p a {
+    font-size: 1.4rem;
+    color: #000000;
   }
 }
 @media (max-width: 500px) {
@@ -437,6 +644,10 @@ transition: all 0.5s ease-in-out;
   .about .about-content .column-right a {
     font-size: 1.6rem;
     padding: 1rem 2.5rem;
-}
+  }
+  .tools .tool-name{
+    
+    margin: 0rem auto 3rem;
+  }
 
 }
