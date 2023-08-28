@@ -391,7 +391,7 @@ body {
 .contact .title::after {
   content: " Get in Touch";
   position: absolute;
-  bottom: -1.1rem;
+  bottom: -1rem;
   left: 50%;
   font-size: 2rem;
   color:  rgb(241, 3, 102);
@@ -513,6 +513,86 @@ body {
 
 
 
+/* project */
+.project{
+  height: 100vh;
+  padding: 10rem 0;
+}
+.project .title {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 6rem;
+  padding-bottom: 2rem;
+  color: #000000;
+}
+.project .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20rem;
+  height: 0.3rem;
+  background-color: #000000;
+  transform: translateX(-50%);
+}
+.project .title::after {
+  content: "My Work";
+  position: absolute;
+  bottom: -0.9rem;
+  left: 50%;
+  font-size: 2rem;
+  color:  rgb(241, 3, 102);
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+.project .project-content{
+  display: flex;
+}
+.project .project-left{
+  width: 50%;
+}
+.project .project-left .projrct-1{
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0rem auto;
+  border-radius: 0.7rem;
+}
+.project .project-left .projrct-1 img{
+  width: 90%;
+  margin: 2rem 2.5rem;
+}
+.project .project-left .projrct-1 h2{
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0rem 2.5rem;
+  padding-bottom: 0.5rem;
+
+}
+.project .project-left .projrct-1 a{
+  font-size: 1.8rem;
+  margin: 0rem 2.5rem;
+  font-weight: 500;
+  background-color: rgb(241, 3, 102);
+  color: #fafafa;
+  padding: 0.2rem 1.5rem;
+  border: 0.2rem solid rgb(241, 3, 102);
+  transition: 0.3s ease;
+  border-radius: 18rem;
+}
+.project .project-left .projrct-1 a:hover{
+  background-color: transparent;
+  color: rgb(241, 3, 102);
+}
+.project .project-left .projrct-1 p{
+  font-size: 1.4rem;
+  margin: 0rem 2.5rem;
+  padding: 1rem 0 1.5rem;
+  font-weight: 400;
+}
+
 
 /* responsive media qurey */
 @media (max-width: 1300px) {
@@ -522,6 +602,12 @@ body {
   .tools .tool-name{
     width: 15rem;
   }
+  .project .project-left .projrct-1 img{
+    width: 90%;
+    margin: 2rem 2.2rem;
+  }
+  .project .project-left .projrct-1{
+    height: 45rem;
 }
 @media (max-width: 1140px) {
   .about .about-content .column-right{
@@ -539,6 +625,13 @@ body {
     text-align: justify;
     margin-bottom: 2rem;
     line-height: 2.6rem;
+  }
+  .project .project-left .projrct-1 img{
+    width: 90%;
+    margin: 2rem 2rem;
+  }
+  .project .project-left .projrct-1{
+      height: 43rem;
   }
   .contact .contact-right{
     width: 55%;
@@ -585,6 +678,7 @@ body {
   }
   .navbar .show-menu a i.active::before {
     content: "\f00d";
+    left: 0%;
   }
   .navbar .nav-item {
     position: fixed;
@@ -643,7 +737,23 @@ body {
     margin-bottom: 3rem;
     line-height: 2.8rem;
   }
-
+  .project{
+    height: 100% !important;
+  }
+  .project .project-content{
+    display: flex;
+    flex-direction: column;
+  }
+  .project .project-left{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .project .project-left .projrct-1{
+    height: 100%;
+  }
+  .project .project-left .projrct-1 img{
+    margin: 2rem 2.7rem;
+  }
   .skills .skils-content{
     justify-content: center;
   }
@@ -682,6 +792,12 @@ body {
   .home a {
     font-size: 2rem;
   }
+  .project{
+    padding: 8rem 0;
+  }
+  .project .project-left .projrct-1 img{
+    margin: 2rem 2rem;
+  }
   .skills {
     padding: 8rem 0;
   }
@@ -701,6 +817,7 @@ body {
     color: #000000;
   }
 }
+
 @media (max-width: 500px) {
   .max-width {
     padding: 0rem 3rem;
@@ -740,10 +857,16 @@ body {
     width: 30rem;
     height: 30rem;
     
-}
-.contact .social-link a i {
-  font-size: 2.5rem;
-  padding: 0.6rem;
-}
+  }
+  .contact .social-link a i {
+    font-size: 2.5rem;
+    padding: 0.6rem;
+  }
+  .project .project-left .projrct-1{
+    width: 100%;
+  }
+  .project .project-left .projrct-1 img{
+    margin: 2rem 1.5rem;
+  }
 
 }

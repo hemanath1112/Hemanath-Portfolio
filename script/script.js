@@ -30,6 +30,9 @@ $(document).ready(function(){
     $('.show-menu').click(function(){
         $('.navbar .nav-item').toggleClass('active');
         $('.show-menu i').toggleClass('active');
+        $('.navbar .nav-item ul li').removeClass('active');
+      
+
         
         // Automatically close the menu if the navbar is not sticky
         if (!$(window).scrollTop() > 20) {
@@ -51,3 +54,5 @@ var typed = new Typed(".typeing-1", {
     backSpeed: 60,
     loop: true
 });
+
+
