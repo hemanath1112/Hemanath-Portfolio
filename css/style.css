@@ -90,9 +90,10 @@ body {
   color: #fff;
   font-family: "Ubuntu", sans-serif;
   min-height: 50rem;
-  background-image: url(../asses/images/banner-1.jpg);
+  background: linear-gradient(rgba(20, 21, 22, 0.8), rgba(13, 13, 14, 0.9)), url(../asses/images/banner-2\ \(1\).jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .home .max-width {
@@ -214,6 +215,86 @@ body {
   background-color: transparent;
   color: rgb(175, 17, 83);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/* project */
+.project{
+  height: 100vh;
+  padding: 10rem 0;
+}
+.project .title {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  color: #000000;
+}
+.project .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20rem;
+  height: 0.3rem;
+  background-color: #000000;
+  transform: translateX(-50%);
+}
+.project .title::after {
+  content: "My Work";
+  position: absolute;
+  bottom: -0.9rem;
+  left: 50%;
+  font-size: 2rem;
+  color:  rgb(241, 3, 102);
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+.project .project-content{
+  display: flex;
+}
+.project .project-left{
+  width: 50%;
+}
+.project .project-left .projrct-1{
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 0rem auto;
+  border-radius: 0.7rem;
+}
+.project .project-left .projrct-1 img{
+  width: 90%;
+  margin: 2rem 2.5rem;
+}
+.project .project-left .projrct-1 h2{
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0rem 2.5rem;
+  padding-bottom: 0.5rem;
+
+}
+.project .project-left .projrct-1 a{
+  font-size: 1.8rem;
+  margin: 0rem 2.5rem;
+  font-weight: 500;
+  background-color: rgb(241, 3, 102);
+  color: #fafafa;
+  padding: 0.2rem 1.5rem;
+  border: 0.2rem solid rgb(241, 3, 102);
+  transition: 0.3s ease;
+  border-radius: 18rem;
+}
+.project .project-left .projrct-1 a:hover{
+  background-color: transparent;
+  color: rgb(241, 3, 102);
+}
+.project .project-left .projrct-1 p{
+  font-size: 1.4rem;
+  margin: 0rem 2.5rem;
+  padding: 1rem 0 1.5rem;
+  font-weight: 400;
 }
 
 
@@ -513,85 +594,6 @@ body {
 
 
 
-/* project */
-.project{
-  height: 100vh;
-  padding: 10rem 0;
-}
-.project .title {
-  position: relative;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 4rem;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 6rem;
-  padding-bottom: 2rem;
-  color: #000000;
-}
-.project .title::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 20rem;
-  height: 0.3rem;
-  background-color: #000000;
-  transform: translateX(-50%);
-}
-.project .title::after {
-  content: "My Work";
-  position: absolute;
-  bottom: -0.9rem;
-  left: 50%;
-  font-size: 2rem;
-  color:  rgb(241, 3, 102);
-  background-color: #fff;
-  transform: translateX(-50%);
-}
-.project .project-content{
-  display: flex;
-}
-.project .project-left{
-  width: 50%;
-}
-.project .project-left .projrct-1{
-  width: 80%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  margin: 0rem auto;
-  border-radius: 0.7rem;
-}
-.project .project-left .projrct-1 img{
-  width: 90%;
-  margin: 2rem 2.5rem;
-}
-.project .project-left .projrct-1 h2{
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 0rem 2.5rem;
-  padding-bottom: 0.5rem;
-
-}
-.project .project-left .projrct-1 a{
-  font-size: 1.8rem;
-  margin: 0rem 2.5rem;
-  font-weight: 500;
-  background-color: rgb(241, 3, 102);
-  color: #fafafa;
-  padding: 0.2rem 1.5rem;
-  border: 0.2rem solid rgb(241, 3, 102);
-  transition: 0.3s ease;
-  border-radius: 18rem;
-}
-.project .project-left .projrct-1 a:hover{
-  background-color: transparent;
-  color: rgb(241, 3, 102);
-}
-.project .project-left .projrct-1 p{
-  font-size: 1.4rem;
-  margin: 0rem 2.5rem;
-  padding: 1rem 0 1.5rem;
-  font-weight: 400;
-}
 
 
 /* responsive media qurey */
@@ -608,6 +610,7 @@ body {
   }
   .project .project-left .projrct-1{
     height: 45rem;
+  }
 }
 @media (max-width: 1140px) {
   .about .about-content .column-right{
